@@ -23,4 +23,4 @@ const splide = new Splide(".splide", {
 
 setTimeout(() => {
   splide.mount({ AutoScroll });
-}, 1000);
+}, 2000);
