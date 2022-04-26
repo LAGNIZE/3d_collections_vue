@@ -104,7 +104,17 @@
 }
 
 .col_img {
-  max-width: 100%;
+  width: 400px;
+  height: 260px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.splide_img {
+  width: 340px;
+  height: 200px;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .col_data {
@@ -136,14 +146,4 @@
   line-height: 29px;
   margin: 115px auto 60px auto;
   width: fit-content;
-}
-
-.splide__slide img {
-  max-width: 100%;
-  height: auto;
-}
-
-.splide1__slide img {
-  max-width: 100%;
-  height: auto;
 }

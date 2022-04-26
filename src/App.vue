@@ -3,29 +3,19 @@
     <section class="splide">
       <div class="splide__track">
         <ul class="splide__list">
-          <li class="splide__slide">
-            <img src="./assets/images/6.png" />
-            <img src="./assets/images/7.png" />
-          </li>
-          <li class="splide__slide">
-            <img src="./assets/images/6.png" />
-            <img src="./assets/images/7.png" />
-          </li>
-          <li class="splide__slide">
-            <img src="./assets/images/6.png" />
-            <img src="./assets/images/7.png" />
-          </li>
-          <li class="splide__slide">
-            <img src="./assets/images/6.png" />
-            <img src="./assets/images/7.png" />
-          </li>
-          <li class="splide__slide">
-            <img src="./assets/images/6.png" />
-            <img src="./assets/images/7.png" />
-          </li>
-          <li class="splide__slide">
-            <img src="./assets/images/6.png" />
-            <img src="./assets/images/7.png" />
+          <li
+            class="splide__slide"
+            v-for="(item, idx) in sortedAndSearchedPosts"
+            v-bind:key="idx"
+          >
+            <img
+              class="splide_img"
+              :src="'http://95.179.188.38/' + item.image"
+            />
+            <img
+              class="splide_img"
+              :src="'http://95.179.188.38/' + item.image"
+            />
           </li>
         </ul>
       </div>
@@ -108,7 +98,7 @@
       >
         <img
           class="col_img"
-          src="./assets/images/6.png"
+          :src="'http://95.179.188.38/' + item.image"
           alt="collection_image"
         />
         <div class="col_data">
@@ -133,7 +123,7 @@
       <div class="col s4" v-for="item in computeOthCol" v-bind:key="item">
         <img
           class="col_img"
-          src="./assets/images/6.png"
+          :src="'http://95.179.188.38/' + item.image"
           alt="collection_image"
         />
         <div class="col_data">
